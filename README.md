@@ -10,7 +10,7 @@ Doctor specialization suggestion
 Patient history tracking
 Search functionality for symptoms
 
-🛠️ Technologies Used
+🛠️ Technologies Use
 Frontend: HTML, CSS, JavaScript
 Backend: Java (Servlet, JSP)
 Database: MySQL
