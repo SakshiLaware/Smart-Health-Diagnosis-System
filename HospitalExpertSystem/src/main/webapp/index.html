@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptoms Checker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .index-box {
+            width: 90%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 35px;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        /* SEARCH BAR */
+        #searchBox {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        #searchBox:focus {
+            border-color: #4a6cf7;
+        }
+
+        /* 2 COLUMNS */
+        .symptoms {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 25px;
+            margin-bottom: 25px;
+        }
+
+        .symptom-item {
+            font-size: 18px;
+            background: #f7f9ff;
+            padding: 12px 15px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .symptom-item:hover {
+            background: #e6f0ff;
+            transform: scale(1.02);
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.3);
+            margin-right: 10px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        /* CENTER BUTTON */
+        button {
+            width: 60%;
+            padding: 12px;
+            font-size: 18px;
+            background: #4a6cf7;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            display: block;
+            margin: 15px auto;
+        }
+
+        button:hover {
+            background: #2f4fe0;
+        }
+
+        /* CENTER LINK */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border-radius: 10px;
+            background: #f2f4ff;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #e0e6ff;
+            color: #4a6cf7;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="index-box">
+    <h2>Enter Symptoms</h2>
+
+    <form action="SymptomServlet" method="post">
+
+        <!-- SEARCH BAR -->
+        <input type="text" id="searchBox" placeholder="Search symptoms..." onkeyup="filterSymptoms()">
+
+        <div class="symptoms">
+
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="fever"> Fever</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="cold"> Cold</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="cough"> Cough</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="vomiting"> Vomiting</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="stomach pain"> Stomach Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="chest pain"> Chest Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="breathing problem"> Breathing Problem</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="body pain"> Body Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="headache"> Headache</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="dizziness"> Dizziness</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="fatigue"> Fatigue</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="high sugar"> High Sugar</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="high bp"> High BP</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="sore throat"> Sore Throat</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="loss of smell"> Loss of Smell</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="skin rash"> Skin Rash</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="joint pain"> Joint Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="ear pain"> Ear Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="eye redness"> Eye Redness</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="back pain"> Back Pain</label>
+            <label class="symptom-item"><input type="checkbox" name="symptom" value="diarrhea"> Diarrhea</label>
+
+        </div>
+
+        <label>From how many days?</label>
+        <input type="number" name="days" required>
+
+        <button type="submit">Check Symptoms</button>
+    </form>
+
+    <a href="history.jsp">View History</a>
+</div>
+
+<!-- SEARCH FUNCTION -->
+<script>
+function filterSymptoms() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let items = document.getElementsByClassName("symptom-item");
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].innerText.toLowerCase();
+        items[i].style.display = text.includes(input) ? "block" : "none";
+    }
+}
+</script>
+
+</body>
+</html>

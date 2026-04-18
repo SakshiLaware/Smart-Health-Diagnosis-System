@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: url("images/hospitalsystemimg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+}
+
+/* FULL SCREEN OVERLAY */
+body::before {
+    content: "";
+    position: fixed;   /* IMPORTANT */
+    top: 0;
+    left: 0;
+    width: 100vw;      /* full width */
+    height: 100vh;     /* full height */
+
+    background: rgba(0, 0, 0, 0.4); /* reduce darkness if needed */
+    z-index: -1;
+}
