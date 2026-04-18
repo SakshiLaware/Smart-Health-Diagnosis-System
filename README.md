@@ -4,54 +4,54 @@ The Smart Medical Diagnosis and Recommendation System is a web-based expert syst
 
 🚀 Features
 
-Symptom selection using interactive UI
-Disease prediction based on rule-based expert system
-Severity analysis of condition
-Suggested treatment recommendations
-Doctor specialization suggestion
-Patient history tracking
-Search functionality for symptoms
+Symptom selection using interactive UI,
+Disease prediction based on rule-based expert system,
+Severity analysis of condition,
+Suggested treatment recommendations,
+Doctor specialization suggestion,
+Patient history tracking,
+Search functionality for symptoms.
 
 🛠️ Technologies Use
 
-Frontend: HTML, CSS, JavaScript
-Backend: Java (Servlet, JSP)
-Database: MySQL
-Server: Apache Tomcat
-Architecture: MVC Pattern
+Frontend: HTML, CSS, JavaScript,
+Backend: Java (Servlet, JSP),
+Database: MySQL,
+Server: Apache Tomcat,
+Architecture: MVC Pattern.
 
 📂 Project Modules
 
-Symptom Checker Module
-Diagnosis Engine (Expert System)
-Result Display Module
-Patient History Module
-Database Connectivity Module
+Symptom Checker Module,
+Diagnosis Engine (Expert System),
+Result Display Module,
+Patient History Module,
+Database Connectivity Module.
 
 ⚙️ How It Works
 
-User selects symptoms from the list
-Inputs number of days of illness
-Data is sent to Servlet
-Expert Engine processes symptoms
+User selects symptoms from the list,
+Inputs number of days of illness,
+Data is sent to Servlet,
+Expert Engine processes symptoms,
 System predicts:
-Possible Disease
-Severity Level
-Treatment Suggestion
-Doctor Type
-Result is displayed to user
+Possible Disease,
+Severity Level,
+Treatment Suggestion,
+Doctor Type,
+Result is displayed to user.
 
 🧠 System Output
 
-Disease Prediction
-Severity (Low / Medium / High)
-Recommended Treatment
-Doctor Recommendation
+Disease Prediction,
+Severity (Low / Medium / High),
+Recommended Treatment,
+Doctor Recommendation.
 
 🗄️ Database Tables
 
-patient_history (symptom, diagnosis, treatment, date)
-users(id, username, password)
+patient_history (symptom, diagnosis, treatment, date),
+users(id, username, password).
 
 📸 Screenshots
 
@@ -65,18 +65,18 @@ users(id, username, password)
 
 🔧 Setup Instructions
 
-Clone the repository
-Import project into Eclipse
-Configure Apache Tomcat server
-Setup MySQL database
-Run the project on server
+Clone the repository,
+Import project into Eclipse,
+Configure Apache Tomcat server,
+Setup MySQL database,
+Run the project on server.
 
 📌 Future Enhancements
 
-AI-based prediction improvement
-Machine learning integration
-Mobile application version
-Chatbot-based symptom analysis
+AI-based prediction improvement,
+Machine learning integration,
+Mobile application version,
+Chatbot-based symptom analysis.
 
 Project: Academic Mini Project
 
