@@ -1,9 +1,7 @@
 📌 Project Description
-
 The Smart Medical Diagnosis and Recommendation System is a web-based expert system that takes patient symptoms as input and predicts possible diseases. It also provides severity level, recommended treatment, and suggested doctor type. The system helps users get quick preliminary health guidance using a rule-based decision approach.
 
 🚀 Features
-
 Symptom selection using interactive UI
 Disease prediction based on rule-based expert system
 Severity analysis of condition
@@ -13,7 +11,6 @@ Patient history tracking
 Search functionality for symptoms
 
 🛠️ Technologies Used
-
 Frontend: HTML, CSS, JavaScript
 Backend: Java (Servlet, JSP)
 Database: MySQL
@@ -21,7 +18,6 @@ Server: Apache Tomcat
 Architecture: MVC Pattern
 
 📂 Project Modules
-
 Symptom Checker Module
 Diagnosis Engine (Expert System)
 Result Display Module
@@ -29,7 +25,6 @@ Patient History Module
 Database Connectivity Module
 
 ⚙️ How It Works
-
 User selects symptoms from the list
 Inputs number of days of illness
 Data is sent to Servlet
@@ -42,14 +37,12 @@ Doctor Type
 Result is displayed to user
 
 🧠 System Output
-
 Disease Prediction
 Severity (Low / Medium / High)
 Recommended Treatment
 Doctor Recommendation
 
 🗄️ Database Tables
-
 patient_history (symptom, diagnosis, treatment, date)
 users(id, username, password)
 
@@ -61,7 +54,6 @@ users(id, username, password)
 <img width="1920" height="1080" alt="Screenshot 2026-04-18 213707" src="https://github.com/user-attachments/assets/670effd3-a7ef-4d3d-8718-31ffafbba255" />
 
 🔧 Setup Instructions
-
 Clone the repository
 Import project into Eclipse
 Configure Apache Tomcat server
@@ -69,13 +61,10 @@ Setup MySQL database
 Run the project on server
 
 📌 Future Enhancements
-
 AI-based prediction improvement
 Machine learning integration
 Mobile application version
 Chatbot-based symptom analysis
-
-👩‍💻 Developer
 
 Project: Academic Mini Project
 
