@@ -17,7 +17,14 @@ public class HistoryServlet extends HttpServlet {
                          HttpServletResponse response)
             throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(false);
+
+        // 🔴 If session not found → redirect to login
+        if (session == null || session.getAttribute("username") == null) {
+            response.sendRedirect("login.html");
+            return;
+        }
+
         String username = (String) session.getAttribute("username");
 
         ArrayList<String[]> historyList = new ArrayList<>();
